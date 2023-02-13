@@ -1,11 +1,14 @@
 import React from "react";
 import { Items } from "../Items/Items";
+import { BoxCart } from "./CartStyle";
 
 export function Cart () {
     return(
-        <div>
+        <BoxCart>
+            <h2>Cart</h2>
             <Items/>
-            <p>Cart</p>
-        </div>
+            <p> Valor total:0</p>
+            
+        </BoxCart>
     )
 }
