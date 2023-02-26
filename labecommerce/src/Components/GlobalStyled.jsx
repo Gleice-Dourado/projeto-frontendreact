@@ -9,9 +9,17 @@ export const GlobalStyle = createGlobalStyle`
         font-family:'Times New Roman', Times, serif
     }`
 
+export const Container = styled.div`
+    display:flex;
+    flex-direction: column;
+
+`
+
 export const ContainerLoja = styled.main`
     display:flex;
-    width:100vw;
-    height:80vh;
+    width:100%;
+    height:100%;
+
+/* border:5px solid red; */
 `
 

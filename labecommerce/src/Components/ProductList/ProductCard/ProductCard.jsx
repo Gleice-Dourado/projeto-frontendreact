@@ -1,15 +1,17 @@
 import React from "react";
 import { Image, CardProduct, ProductInfo, BtnAddCart } from "./ProductCardStyle";
 
-export function ProductCard() {
+export function ProductCard({name, image, value }) {
+    //obrigatório o alt na img
+    
     return (
         <CardProduct>
             <Image>
-                <p>ProductCard</p>
+                <img src={image} alt={'primeira imagem'}/>
             </Image>
             <ProductInfo>
-                <p>Nome  do Produto</p>
-                <p>Valor</p>
+                <p>{name}</p>
+                <p>Valor: R${value},99</p>
                 <BtnAddCart>
                     <button>Adicionar ao Carrinho</button>
                 </BtnAddCart>

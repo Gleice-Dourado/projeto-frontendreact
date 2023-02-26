@@ -1,5 +1,6 @@
 import React from "react";
-import { BoxFilter, ValorMinimo, ValorMaximo, BuscaPorNome } from "./FiltersStyle";
+import { BoxFilter, ValorMinimo, ValorMaximo, BuscaPorNome, MoonIMG } from "./FiltersStyle";
+import LusMetade from '../../assets/lua-metade.jpg'
 
 export function Filters() {
     return (
@@ -19,6 +20,7 @@ export function Filters() {
                 <label htmlFor="busca-por-nome">Busca por nome:</label>
                 <input type={"text"} />
             </BuscaPorNome>
+          {  <MoonIMG src={LusMetade} alt="Lua"/>}
         </BoxFilter >
     )
 }

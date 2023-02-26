@@ -1,12 +1,24 @@
 import styled from "styled-components";
 
 export const CardProduct = styled.section`
-    background-color:blue;
+    background-image:url('https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107__340.jpg');
+    width:18vw;
+    height:60vh;
+    border-radius:2%;
+    color: white;
+    border:1px solid black;
 `
 export const Image = styled.div`
-   /*  width: 20vw; */
-    border: 1px solid black;
+   
+   /*  border: 1px solid black; */
     height:80%;
+
+    img{
+        width:100%;
+        height:100%;
+        border-radius:2%;
+    }
+  
 `
 
 export const ProductInfo = styled.div`
