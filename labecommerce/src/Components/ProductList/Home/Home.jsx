@@ -1,9 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import { ProductCard } from "../ProductCard/ProductCard";
 import { HomePage, CardsArea, HeaderHome } from "./HomeStyle";
 
 export function Home({ productList }) {
 
+    const [ordination, setOrdination] = useState('')
 
     return (
         <HomePage>
@@ -15,7 +17,7 @@ export function Home({ productList }) {
                     <label>
                         Ordenação:
                     </label>
-                    <select name="crescente-decrescente" >
+                    <select name="crescente-decrescente" value={ordination} onChange={e => setOrdination(e.target.value)}>
                         <option value="Decrescente">Decrescente</option>
                         <option value="Crescente">Crescente</option>
                     </select>
