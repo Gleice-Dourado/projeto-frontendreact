@@ -1,30 +1,26 @@
 import React from "react";
-import { BoxFilter, ValorMinimo, ValorMaximo } from "./FiltersStyle";
+import { BoxFilter, ValorMinimo, ValorMaximo, BuscaPorNome, MoonIMG } from "./FiltersStyle";
+import LusMetade from '../../assets/lua-metade.jpg'
 
-
-
-export function Filters(props) {
-
-    const { minFilter, setMinFilter, maxFilter, setMaxFilter } = props
-
-
+export function Filters() {
     return (
         <BoxFilter>
-            <h2>Filtrar por:</h2>
-            <h3>Preço</h3>
+            <h2>Filters</h2>
             <ValorMinimo>
                 <label htmlFor="valor-minimo">Valor mínimo:</label>
-                <input type={"number"}
-                    id={"valor-minimo"} min={0} value={minFilter} onChange={e => setMinFilter(e.target.value)} />
+                <input type={"number"} />
             </ValorMinimo>
 
             <ValorMaximo>
                 <label htmlFor="valor-maximo">Valor máximo:</label>
-                <input type={"number"}
-                    id={"valor-maximo"} min={0} value={maxFilter} onChange={e => setMaxFilter(e.target.value)} />
+                <input type={"number"} />
             </ValorMaximo>
 
-        
+            <BuscaPorNome>
+                <label htmlFor="busca-por-nome">Busca por nome:</label>
+                <input type={"text"} />
+            </BuscaPorNome>
+          {  <MoonIMG src={LusMetade} alt="Lua"/>}
         </BoxFilter >
     )
 }

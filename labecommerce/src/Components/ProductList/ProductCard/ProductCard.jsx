@@ -1,21 +1,19 @@
 import React from "react";
-import { productList } from "../../../assets/productList";
 import { Image, CardProduct, ProductInfo, BtnAddCart } from "./ProductCardStyle";
 
-export function ProductCard(props) {
-
-    const {name, image, value, product, addCart} = props
-
+export function ProductCard({name, image, value }) {
+    //obrigatório o alt na img
+    
     return (
         <CardProduct>
             <Image>
-                <img src={image} alt={name} />
+                <img src={image} alt={'primeira imagem'}/>
             </Image>
             <ProductInfo>
                 <p>{name}</p>
-                <p>Valor:{`R$ ${(value).toFixed(2).replace('.', ',')}`}</p>
+                <p>Valor: R${value},99</p>
                 <BtnAddCart>
-                    <button onClick={() => addCart(product)} >Adicionar ao Carrinho</button>
+                    <button>Adicionar ao Carrinho</button>
                 </BtnAddCart>
             </ProductInfo>
         </CardProduct>
