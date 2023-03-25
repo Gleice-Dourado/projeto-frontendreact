@@ -1,5 +1,6 @@
 # projeto-frontendreact
 
+
 Esse é o projeto de introdução aos fundamentos do React. Aqui, vamos praticar a estrutura do que consideramos a estrutura do React. O objetivo é que funcione como o front-end de um E-Commerce
 
 - JSX
@@ -120,4 +121,8 @@ https://user-images.githubusercontent.com/11279432/197185533-14582ca3-9eb0-4a5a-
 
 - Entregue o **link do repo** no [Formulário de entrega](https://forms.gle/S9XChPZravP3WdxL6) 
 
+Link do Surge: (https://numerous-war.surge.sh/)
 
+![Página inicial - versão desktop](/labecommerce/public/img/P%C3%A1gina%20principal.png)
+
+![Página inicial Carrinho -  versão desktop](/labecommerce/public/img/Pagina%20principal%20Desktop-%20carrinho%20aberto.png)
